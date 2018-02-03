@@ -1,18 +1,18 @@
 var app = angular.module('app', ['ui.router']);
 
 app.config(function($stateProvider) {
-  var helloState = {
-    name: 'hello',
-    url: '/hello',
-    template: '<h3>hello world!</h3>'
+  var homeState = {
+    name: 'home',
+    url: '/home',
+    templateUrl: 'templates/home.html'
   }
 
   var aboutState = {
     name: 'about',
     url: '/about',
-    template: '<h3>Its the UI-Router hello world app!</h3>'
+    templateUrl: 'templates/about.html'
   }
 
-  $stateProvider.state(helloState);
+  $stateProvider.state(homeState);
   $stateProvider.state(aboutState);
 });

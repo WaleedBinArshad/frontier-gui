@@ -13,6 +13,13 @@ app.config(function($stateProvider) {
     templateUrl: 'templates/about.html'
   }
 
+  var factCheckState = {
+    name: 'fact-check',
+    url: '/fact-check',
+    templateUrl: 'templates/fact-check.html'
+  }
+
   $stateProvider.state(homeState);
   $stateProvider.state(aboutState);
+  $stateProvider.state(factCheckState);
 });

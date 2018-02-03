@@ -19,7 +19,14 @@ app.config(function($stateProvider) {
     templateUrl: 'templates/fact-check.html'
   }
 
+  var crawlerState = {
+    name: 'crawler',
+    url: '/crawler',
+    templateUrl: 'templates/crawler.html'
+  }
+
   $stateProvider.state(homeState);
   $stateProvider.state(aboutState);
   $stateProvider.state(factCheckState);
+  $stateProvider.state(crawlerState);
 });

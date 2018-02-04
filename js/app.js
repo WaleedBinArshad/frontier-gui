@@ -25,8 +25,15 @@ app.config(function($stateProvider) {
     templateUrl: 'templates/crawler.html'
   }
 
+  var squirrelState = {
+    name: 'squirrel',
+    url: '/squirrel',
+    templateUrl: 'templates/squirrel.html'
+  }
+
   $stateProvider.state(homeState);
   $stateProvider.state(aboutState);
   $stateProvider.state(factCheckState);
   $stateProvider.state(crawlerState);
+  $stateProvider.state(squirrelState);
 });

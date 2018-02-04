@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid" ng-controller="homeCtrl">
   <div class="row">
     <div class="col-sm-6 col-sm-offset-6 col-md-6 col-sm-offset-6 main">
       <div class="row placeholders">
@@ -13,25 +13,25 @@
           <tr>
             <td>Number of pending URIs</td>
             <td>
-              <a><b>120</b></a>
+              <a><b>{{urlsCount[0]}}</b></a>
             </td>
           </tr>
           <tr>
             <td>Number of crawled URIs</td>
             <td>
-              <a><b>100</b></a>
+              <a><b>{{urlsCount[1]}}</b></a>
             </td>
           </tr>
           <tr>
             <td>Number of workers</td>
             <td>
-              <a><b>1</b></a>
+              <a><b>{{urlsCount[2]}}</b></a>
             </td>
           </tr>
           <tr>
             <td>Number of dead workers</td>
             <td>
-              <a><b>0</b></a>
+              <a><b>{{urlsCount[3]}}</b></a>
             </td>
           </tr>
         </tbody> 

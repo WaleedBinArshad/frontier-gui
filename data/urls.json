@@ -1,3 +1,14 @@
-{
-  "urls": [125, 13, 145, 0]
+{ 
+  "urIs" : {
+  "pendingURIs":["/resources/resource1"],
+  "nextCrawledURIs":["/resources/resource1"],
+  "countOfCrawledURIs":0,
+  "countOfWorker":1,
+  "countOfDeadWorker":0,
+  "countOfPendingURIs":1,
+  "runtimeInSeconds":35,
+  "writeTime":"Mon Feb 05 10:40:03 UTC 2018",
+  "readTime":"Mon Feb 05 10:40:27 UTC 2018 | The object is ready to read!",
+  "ipStringListMap":{"172.18.0.3":["/resources/resource1"]}
+  }
 }

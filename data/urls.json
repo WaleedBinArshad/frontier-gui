@@ -1,9 +1,9 @@
 { 
   "urIs" : {
-  "pendingURIs":["/resources/resource1"],
+  "pendingURIs":["/resources/resource1","/resources/resource2","/resources/resource3"],
   "nextCrawledURIs":["/resources/resource1"],
   "countOfCrawledURIs":0,
-  "countOfWorker":1,
+  "countOfWorker":7,
   "countOfDeadWorker":0,
   "countOfPendingURIs":1,
   "runtimeInSeconds":35,

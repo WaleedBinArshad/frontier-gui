@@ -13,25 +13,25 @@
           <tr>
             <td>Number of pending URIs</td>
             <td>
-              <a><b>{{urlsCount[0]}}</b></a>
+              <a><b>{{pendingURIs.length}}</b></a>
             </td>
           </tr>
           <tr>
             <td>Number of crawled URIs</td>
             <td>
-              <a><b>{{urlsCount[1]}}</b></a>
+              <a><b>{{nextCrawledURIs.length}}</b></a>
             </td>
-          </tr>
+          </tr>         
           <tr>
             <td>Number of workers</td>
             <td>
-              <a><b>{{urlsCount[2]}}</b></a>
+              <a><b>{{countOfWorker}}</b></a>
             </td>
           </tr>
           <tr>
             <td>Number of dead workers</td>
             <td>
-              <a><b>{{urlsCount[3]}}</b></a>
+              <a><b>{{countOfDeadWorker}}</b></a>
             </td>
           </tr>
         </tbody> 
@@ -46,11 +46,15 @@
               <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 <b style="color: #337ab7">PendingURIs</b>
               </a>
-            </h4>
+            </h4>            
           </div>
           <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
             <div class="panel-body">
-              haven't heard of them accusamus labore sustainable VHS.
+                  <ul ng-repeat="pURI in pendingURIs">
+                    <li>
+                      <a><b>{{pURI}}</b></a>
+                    </li>
+                  </ul>
             </div>
           </div>
         </div>
@@ -64,7 +68,11 @@
           </div>
           <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
             <div class="panel-body">
-              haven't heard of them accusamus labore sustainable VHS.
+                <ul ng-repeat="ncURIS in nextCrawledURIs">
+                    <li>
+                      <a><b>{{ncURIS}}</b></a>
+                    </li>
+                  </ul>              
             </div>
           </div>
         </div>
